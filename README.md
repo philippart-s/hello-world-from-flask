@@ -9,4 +9,7 @@
  - Get app info: `ovhai app get <app id>`
  - Get the app logs: `ovhai app logs -f <app id>`
  - Test the app: `curl https://<URL of deployed app>`
+ - Update the number of replicas: `ovhai app scale <app id> --replicas 2`
+ - Set the min and max replicas: `ovhai app scale --auto-min-replicas 1 --auto-max-replicas 2 --auto-resource-type CPU --auto-resource-usage-threshold 50 <app id>`
+ - Test the app: `curl https://<URL of deployed app>`
  - Stop the app: `ovhai app stop <app id>`
